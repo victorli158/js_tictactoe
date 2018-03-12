@@ -1,6 +1,5 @@
 // refactor click listeners
 // refactor checkVictory
-// make the cell divs clickable and use nearest or something to change the image
 
 $(document).ready(function() {
   let currentPlayer = 'x';

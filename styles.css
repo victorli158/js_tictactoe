@@ -6,12 +6,11 @@ img {
 }
 
 .cell {
-  background-color: yellow;
-  border: 1px solid black;
   height: 100px;
   width: 100px;
   display: inline-block;
-  margin: -3px;
+  margin-left: -5px;
+  margin-top: -1px;
 }
 
 #container {
@@ -25,4 +24,14 @@ img {
 #replay {
   display: none;
   margin-top: 100px;
+}
+
+#four, #five, #six {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+#two, #five, #eight {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
