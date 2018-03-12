@@ -21,3 +21,8 @@ img {
 #player-div {
   margin-bottom: 50px;
 }
+
+#replay {
+  display: none;
+  margin-top: 100px;
+}
