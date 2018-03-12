@@ -1,3 +1,7 @@
+// refactor click listeners
+// refactor checkVictory
+// make the cell divs clickable and use nearest or something to change the image
+
 $(document).ready(function() {
   let currentPlayer = 'x';
   let one = $('#one');
@@ -13,15 +17,7 @@ $(document).ready(function() {
   let player = $('#player');
 
   function removeListeners() {
-    one.off();
-    two.off();
-    three.off();
-    four.off();
-    five.off();
-    six.off();
-    seven.off();
-    eight.off();
-    nine.off();
+    $('#one, #two, #three, #four, #five, #six, #seven, #eight, #nine').off();
   }
 
   function checkVictory() {
@@ -81,13 +77,13 @@ $(document).ready(function() {
 
   one.on('click', function() {
     if (places[0][0] === 0 && currentPlayer === 'x') {
-      one.attr('src', 'images/x.png');
+      $(this).attr('src', 'images/x.png');
       places[0][0] = 'x';
       currentPlayer = 'o';
       player.attr('src', 'images/o.png');
       setTimeout(checkVictory, 100);
     } else if (places[0][0] === 0 && currentPlayer === 'o') {
-      one.attr('src', 'images/o.png');
+      $(this).attr('src', 'images/o.png');
       places[0][0] = 'o';
       currentPlayer = 'x';
       player.attr('src', 'images/x.png');
