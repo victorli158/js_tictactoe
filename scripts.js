@@ -29,6 +29,7 @@ $(document).ready(function() {
       player.attr('src', 'images/x.png');
       addListeners();
       replay.css('display', 'none');
+      console.log(places);
     });
   }
 

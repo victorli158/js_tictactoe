@@ -5,6 +5,14 @@ img {
   position: relative;
 }
 
+button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #3B5998;
+  color: white;
+}
+
 .cell {
   height: 100px;
   width: 100px;
