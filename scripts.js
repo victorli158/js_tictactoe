@@ -1,7 +1,6 @@
 // refactor click listeners
 // refactor checkVictory
 // make the cell divs clickable and use nearest or something to change the image
-// add a play again button
 
 $(document).ready(function() {
   let currentPlayer = 'x';
@@ -109,13 +108,13 @@ $(document).ready(function() {
   function addListeners() {
     one.on('click', function() {
       if (places[0][0] === 0 && currentPlayer === 'x') {
-        $(this).attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[0][0] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[0][0] === 0 && currentPlayer === 'o') {
-        $(this).attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[0][0] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -127,13 +126,13 @@ $(document).ready(function() {
 
     two.on('click', function() {
       if (places[0][1] === 0 && currentPlayer === 'x') {
-        two.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[0][1] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[0][1] === 0 && currentPlayer === 'o') {
-        two.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[0][1] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -145,13 +144,13 @@ $(document).ready(function() {
 
     three.on('click', function() {
       if (places[0][2] === 0 && currentPlayer === 'x') {
-        three.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[0][2] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[0][2] === 0 && currentPlayer === 'o') {
-        three.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[0][2] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -163,13 +162,13 @@ $(document).ready(function() {
 
     four.on('click', function() {
       if (places[1][0] === 0 && currentPlayer === 'x') {
-        four.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[1][0] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[1][0] === 0 && currentPlayer === 'o') {
-        four.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[1][0] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -181,13 +180,13 @@ $(document).ready(function() {
 
     five.on('click', function() {
       if (places[1][1] === 0 && currentPlayer === 'x') {
-        five.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[1][1] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[1][1] === 0 && currentPlayer === 'o') {
-        five.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[1][1] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -199,13 +198,13 @@ $(document).ready(function() {
 
     six.on('click', function() {
       if (places[1][2] === 0 && currentPlayer === 'x') {
-        six.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[1][2] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[1][2] === 0 && currentPlayer === 'o') {
-        six.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[1][2] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -217,13 +216,13 @@ $(document).ready(function() {
 
     seven.on('click', function() {
       if (places[2][0] === 0 && currentPlayer === 'x') {
-        seven.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[2][0] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[2][0] === 0 && currentPlayer === 'o') {
-        seven.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[2][0] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -235,13 +234,13 @@ $(document).ready(function() {
 
     eight.on('click', function() {
       if (places[2][1] === 0 && currentPlayer === 'x') {
-        eight.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[2][1] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[2][1] === 0 && currentPlayer === 'o') {
-        eight.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[2][1] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
@@ -253,13 +252,13 @@ $(document).ready(function() {
 
     nine.on('click', function() {
       if (places[2][2] === 0 && currentPlayer === 'x') {
-        nine.attr('src', 'images/x.png');
+        $(this).find('img').attr('src', 'images/x.png');
         places[2][2] = 'x';
         currentPlayer = 'o';
         player.attr('src', 'images/o.png');
         setTimeout(checkVictory, 100);
       } else if (places[2][2] === 0 && currentPlayer === 'o') {
-        nine.attr('src', 'images/o.png');
+        $(this).find('img').attr('src', 'images/o.png');
         places[2][2] = 'o';
         currentPlayer = 'x';
         player.attr('src', 'images/x.png');
