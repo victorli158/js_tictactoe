@@ -1,0 +1,23 @@
+img {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  position: relative;
+}
+
+.cell {
+  background-color: yellow;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin: -3px;
+}
+
+#container {
+  text-align: center;
+}
+
+#player-div {
+  margin-bottom: 50px;
+}
