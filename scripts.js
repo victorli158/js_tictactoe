@@ -107,17 +107,11 @@ $(document).ready(function() {
 
   function addListeners() {
     one.on('click', function() {
-      if (places[0][0] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[0][0] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[0][0] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[0][0] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[0][0] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[0][0] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -125,17 +119,11 @@ $(document).ready(function() {
     });
 
     two.on('click', function() {
-      if (places[0][1] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[0][1] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[0][1] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[0][1] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[0][1] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[0][1] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -143,17 +131,11 @@ $(document).ready(function() {
     });
 
     three.on('click', function() {
-      if (places[0][2] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[0][2] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[0][2] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[0][2] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[0][2] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[0][2] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -161,17 +143,11 @@ $(document).ready(function() {
     });
 
     four.on('click', function() {
-      if (places[1][0] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[1][0] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[1][0] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[1][0] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[1][0] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[1][0] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -179,17 +155,11 @@ $(document).ready(function() {
     });
 
     five.on('click', function() {
-      if (places[1][1] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[1][1] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[1][1] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[1][1] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[1][1] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[1][1] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -197,17 +167,11 @@ $(document).ready(function() {
     });
 
     six.on('click', function() {
-      if (places[1][2] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[1][2] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[1][2] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[1][2] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[1][2] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[1][2] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -215,17 +179,11 @@ $(document).ready(function() {
     });
 
     seven.on('click', function() {
-      if (places[2][0] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[2][0] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[2][0] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[2][0] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[2][0] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[2][0] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -233,17 +191,11 @@ $(document).ready(function() {
     });
 
     eight.on('click', function() {
-      if (places[2][1] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[2][1] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[2][1] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[2][1] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[2][1] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[2][1] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
@@ -251,17 +203,11 @@ $(document).ready(function() {
     });
 
     nine.on('click', function() {
-      if (places[2][2] === 0 && currentPlayer === 'x') {
-        $(this).find('img').attr('src', 'images/x.png');
-        places[2][2] = 'x';
-        currentPlayer = 'o';
-        player.attr('src', 'images/o.png');
-        setTimeout(checkVictory, 100);
-      } else if (places[2][2] === 0 && currentPlayer === 'o') {
-        $(this).find('img').attr('src', 'images/o.png');
-        places[2][2] = 'o';
-        currentPlayer = 'x';
-        player.attr('src', 'images/x.png');
+      if (places[2][2] === 0) {
+        $(this).find('img').attr('src', `images/${currentPlayer}.png`);
+        places[2][2] = currentPlayer;
+        currentPlayer = (currentPlayer === 'x') ? 'o' : 'x';
+        player.attr('src', `images/${currentPlayer}.png`);
         setTimeout(checkVictory, 100);
       } else {
         alert('Invalid move!');
